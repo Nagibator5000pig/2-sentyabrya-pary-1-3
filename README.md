@@ -38,23 +38,26 @@ Figure (базовый класс)
 ## 3. Пример использования
 
 # Создание фигур
+```
 circle = Circle(0, 0, 5)
 square = Square(10, 10, 4)
-
+```
 # Получение координат
 coords = circle.get_coords()  # (0, 0)
 
 # Расчёт площади
+```
 circle_area = circle.calculate_area()  # 78.54
 square_area = square.calculate_area()  # 16.0
-
+```
 # Список фигур и подсчёт общей площади
+```
 figures = [circle, square]
 total = 0
 for fig in figures:
     total += fig.calculate_area()
 print(f"Общая площадь: {total:.2f}")
-
+```
 ## 4. Результат работы
 
 === МИНИ-ГРАФИЧЕСКИЙ РЕДАКТОР ===
